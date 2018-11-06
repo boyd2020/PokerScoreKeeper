@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/playerFragment"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="@dimen/default_image_size"
+        android:layout_height="@dimen/default_image_size"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_gravity="start"
+        android:src="@android:drawable/ic_delete"
+        android:tint="@android:color/white"
+        android:contentDescription="@string/dialog_cancel"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="@dimen/default_card_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:cardCornerRadius="@dimen/default_card_radius"
+            app:cardBackgroundColor="@color/cardview_light_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding">
+
+                <TextView
+                    android:id="@+id/playerTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/default_section_margin"
+                    android:text="@string/label_add_player"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_header"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:padding="@dimen/default_padding"
+                    android:layout_gravity="bottom">
+
+                    <EditText
+                        android:id="@+id/playerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/label_player_name"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorSubText" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:padding="@dimen/default_padding"
+                    android:layout_gravity="bottom">
+
+                    <EditText
+                        android:id="@+id/playerEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/label_player_email"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorSubText" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:padding="@dimen/default_padding"
+                    android:layout_gravity="bottom">
+
+                    <EditText
+                        android:id="@+id/playerPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:hint="@string/label_player_phone"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorSubText" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:padding="@dimen/default_padding"
+                    android:layout_gravity="bottom">
+
+                    <EditText
+                        android:id="@+id/playerStartingScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="@string/label_player_starting_score"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/colorSubText" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="@dimen/default_fab_size"
+                    android:layout_height="@dimen/default_fab_size"
+                    android:layout_gravity="center"
+                    app:layout_anchor="@id/card"
+                    app:layout_anchorGravity="bottom|end|right"
+                    android:layout_margin="@dimen/default_margin"
+                    app:elevation="@dimen/default_elevation"
+                    android:src="@android:drawable/ic_input_add"
+                    android:tint="@android:color/white"
+                    android:contentDescription="@string/label_add_player"/>
+
+
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

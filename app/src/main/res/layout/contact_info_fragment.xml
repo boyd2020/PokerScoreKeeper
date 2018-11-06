@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/default_image_size"
+            android:layout_height="@dimen/default_image_size"
+            android:layout_marginEnd="@dimen/default_text_margin"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_phone_black_48dp"
+            android:contentDescription="@string/desc_phone"/>
+
+        <TextView
+            android:id="@+id/playerPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/default_margin_left"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorSubText"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_section_margin">
+
+        <ImageView
+            android:layout_width="@dimen/default_image_size"
+            android:layout_height="@dimen/default_image_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/default_text_margin"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_email_black_48dp"
+            android:contentDescription="@string/desc_email"/>
+
+        <TextView
+            android:id="@+id/playerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/default_margin_left"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorSubText"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+    </TableRow>
+
+</LinearLayout>

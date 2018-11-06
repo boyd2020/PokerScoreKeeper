@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/standingCard"
+    android:padding="@dimen/default_padding"
+    android:background="@color/cardview_light_background">
+
+
+    <ImageView
+        android:id="@+id/playerImage"
+        android:layout_width="@dimen/default_image_size"
+        android:layout_height="@dimen/default_image_size"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:tint="@color/colorSubText"
+        android:src="@drawable/ic_person_black_48dp"
+        android:contentDescription="@string/desc_player_icon"/>
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/playerImage"
+        android:layout_toStartOf="@id/playerScore"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/default_text_margin"
+        android:layout_marginEnd="@dimen/default_text_margin"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorSubText" />
+
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_header" />
+
+</RelativeLayout>

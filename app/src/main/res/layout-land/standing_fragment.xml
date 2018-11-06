@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/fromDateCard"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/date_card_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            android:nextFocusRight="@id/toDateCard">
+
+            <ImageView
+                android:layout_width="@dimen/default_image_size"
+                android:layout_height="@dimen/default_image_size"
+                android:layout_marginStart="@dimen/default_margin_left"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/date_from"
+                android:tint="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/fromDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_left"
+                android:layout_gravity="center"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/toDateCard"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/date_card_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            android:nextFocusLeft="@id/fromDateCard"
+            android:nextFocusRight="@layout/list_layout">
+
+            <ImageView
+                android:layout_width="@dimen/default_image_size"
+                android:layout_height="@dimen/default_image_size"
+                android:layout_marginStart="@dimen/default_margin_left"
+                android:src="@drawable/date_to"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/toDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_left"
+                android:layout_gravity="center"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+        </android.support.v7.widget.CardView>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/default_card_margin">
+
+        <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/default_margin"/>
+
+
+        </android.support.v7.widget.CardView>
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            layout="@layout/list_layout"/>
+
+    </TableRow>
+</LinearLayout>

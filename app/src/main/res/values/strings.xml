@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">PokerScoreKeeper</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!-- Player Labels -->
+    <string name="label_add_player">Add Player</string>
+    <string name="label_edit_player">Edit Player</string>
+    <string name="label_player_name">Player Name</string>
+    <string name="label_player_email">Player Email</string>
+    <string name="label_player_phone">Player Phone</string>
+    <string name="label_player_starting_score">Player Starting Score</string>
+
+    <!-- PlayerScore Labels -->
+    <string name="label_add_score">Add Score</string>
+    <string name="label_edit_score">Edit Score</string>
+    <string name="label_score_date">Score Date</string>
+    <string name="label_score_showing_up">Showing Up</string>
+    <string name="label_placing">Placing</string>
+    <string name="label_high_hand">High Hand</string>
+    <string name="label_final_table">Final Table</string>
+
+    <!-- PlayerScore Date Strings -->
+    <string name="label_player_count">Players: %1$d</string>
+    <string name="label_player_score_info">Showing Up: %1$d\nPlacing: %2$d\nHighHand: %3$d\nFinal Table: %4$d</string>
+    <string name="title_score">Scores: %1$s</string>
+
+    <!-- Contact info Labels -->
+    <string name="tab_contact_info">Contact Info</string>
+    <string name="tab_scores">Scores</string>
+
+    <!-- Empty Labels -->
+    <string name="label_empty">N/A</string>
+    <string name="empty_players">No Players Found</string>
+    <string name="empty_scores">No Scores Found</string>
+
+    <!-- Menu Label -->
+    <string name="menu_players">Players</string>
+    <string name="menu_scores">Scores</string>
+    <string name="menu_standings">Standings</string>
+
+    <!-- Dialog -->
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_create">Create</string>
+    <string name="dialog_select_player">Select Player</string>
+
+    <!-- Chart Labels -->
+    <string name="label_chart_title">Player</string>
+    <string name="label_chart_description">Player Standings</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <!-- Content Descriptions -->
+    <string name="desc_player_icon">Player Icon</string>
+    <string name="desc_from_icon">From Date</string>
+    <string name="desc_to_icon">To Date</string>
+    <string name="desc_edit_player">Edit Player</string>
+    <string name="desc_add_score">Add Score</string>
+    <string name="desc_phone">Phone</string>
+    <string name="desc_email">Email</string>
+    <string name="desc_add_player">Add Player</string>
+
+    <!-- Error Messages -->
+    <string name="error_player_name">Please enter a name for the player</string>
+    <string name="error_score_date">Please enter a date for the score</string>
+
+</resources>

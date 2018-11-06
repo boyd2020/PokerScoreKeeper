@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tabPlayers"
+        android:title="@string/menu_players"
+        android:contentDescription="@string/menu_players"
+        android:icon="@drawable/ic_person_black_48dp"/>
+    <item
+        android:id="@+id/tabScores"
+        android:title="@string/menu_scores"
+        android:contentDescription="@string/menu_scores"
+        android:icon="@drawable/baseline_star_rate_black_48"/>
+    <item
+        android:id="@+id/tabStandings"
+        android:title="@string/menu_standings"
+        android:contentDescription="@string/menu_standings"
+        android:icon="@drawable/ic_trending_up_black_48dp"/>
+
+</menu>

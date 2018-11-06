@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "343204866069",
+    "firebase_url": "https://pokerscorekeeper-91a9d.firebaseio.com",
+    "project_id": "pokerscorekeeper-91a9d",
+    "storage_bucket": "pokerscorekeeper-91a9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343204866069:android:b0f5a7c62c9b7218",
+        "android_client_info": {
+          "package_name": "com.example.pokerscorekeeper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343204866069-fpragd9in4e16avrab16nts0dritq4bq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pokerscorekeeper",
+            "certificate_hash": "4a52c2a00d438a897fa58693d1780ee6c7670789"
+          }
+        },
+        {
+          "client_id": "343204866069-aigijmcj6jfp07m1svkt5tjbbai4hbl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6v6poJQgj5OlgOyPTP6CUh5FXbodLw28"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343204866069-aigijmcj6jfp07m1svkt5tjbbai4hbl2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

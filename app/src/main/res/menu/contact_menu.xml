@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuEditContact"
+        app:showAsAction="always"
+        android:title="@string/desc_edit_player"
+        android:contentDescription="@string/desc_edit_player"
+        android:icon="@drawable/ic_create_white_48dp"
+        app:iconTint="@android:color/white"/>
+
+    <item
+        android:id="@+id/menuAddScore"
+        app:showAsAction="ifRoom"
+        android:title="@string/desc_add_score"
+        android:contentDescription="@string/desc_add_score"
+        android:icon="@drawable/baseline_star_rate_black_48"
+        app:iconTint="@android:color/white"/>
+
+</menu>
